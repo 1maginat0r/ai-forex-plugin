@@ -7,4 +7,4 @@ data = {
     "price": "M"
 }
 
-resp
+response = requests.post("http://lo
