@@ -7,4 +7,5 @@ data = {
     "price": "M"
 }
 
-response = requests.post("http://localhost:5003/api/analyze", json=
+response = requests.post("http://localhost:5003/api/analyze", json=data)
+print(response.json(
