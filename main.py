@@ -61,3 +61,38 @@ cors = CORS(app, resources={
         ]
     }
 })
+
+app.config['CORS_HEADERS'] = 'Content-Type'
+
+# Routes for different functionalities of the application
+@app.route('/generate', methods=['POST'])
+# Generate endpoint uses OpenAI API to generate text based on a given prompt and temperature
+def generate():
+    data = request.get_json()
+    prompt = data.get('prompt')
+    temperature = data.get('temperature', 0.5)
+    generated_text = client.ChatCompletion.create(engine="gpt-4-1106-preview", 
+    prompt=prompt, 
+    temperature=temperature,
+    max_tokens=28000, #default max is 4096 for text-davinci-003, errors with sentiment analysis were caused by gpt-4-32k-0613 here when Chat was missing from ChatCompletion (changing to 3700 as errors were occurring where the prompt was consuming more tokens in addition to completion causing total to go above max).
+    n=2,
+    stop=None,
+    log_level="info"                                          
+                                              
+    )
+    return jsonify({'generated_text': generated_text})
+
+@app.route('/complete', methods=['POST'])
+# Complete endpoint uses OpenAI API to complete given text 
+def complete():
+    data = request.get_json()
+    text = data.get('text')
+    completed_text = client.ChatCompletion.create(model="gpt-4-1106-preview",
+    text=text,
+    max_tokens=28000 #default max is 4096 for text-davinci-003, errors with sentiment analysis were caused by gpt-4-32k-0613 here when Chat was missing from ChatCompletion (changing to 3700 as errors were occurring where the prompt was consuming more tokens in addition to completion causing total to go above max).
+    )
+    return jsonify({'completed_text': completed_text})
+
+@app.route('/search', methods=['POST'])
+# Search endpoint uses OpenAI API to search based on a given query
+def search():
