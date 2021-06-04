@@ -96,3 +96,32 @@ def complete():
 @app.route('/search', methods=['POST'])
 # Search endpoint uses OpenAI API to search based on a given query
 def search():
+    data = request.get_json()
+    query = data.get('query')
+    response = client.Completion.create(
+        engine="gpt-4-1106-preview", # upgraded from gpt-4-32k-0314 which supports 128k tokens, default is gpt-3.5-turbo-0301 
+        prompt=query,
+        max_tokens=120000
+    )
+    generated_text = response.choices[0].text.strip()
+    return jsonify({'results': generated_text})
+
+@app.route('/playground', methods=['POST'])
+# Playground endpoint uses OpenAI API to generate code based on a given prompt
+def playground():
+    data = request.get_json()
+    code = data.get('code')
+    response = client.Completion.create(
+        engine="gpt-4-1106-preview", # upgraded to gpt-4-1106-preview from gpt-4-32k-0314, default is gpt-3.5-turbo-0301 
+        prompt=code,
+        max_tokens=120000
+    )
+    generated_text = response.choices[0].text.strip()
+    return jsonify({'output': generated_text})
+
+@app.route('/logo.png')
+# Serves logo image
+def serve_logo():
+    return send_from_directory('.', 'logo.png', mimetype='image/png')
+
+@app.route('/openapi.yaml')
