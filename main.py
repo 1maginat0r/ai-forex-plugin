@@ -125,3 +125,39 @@ def serve_logo():
     return send_from_directory('.', 'logo.png', mimetype='image/png')
 
 @app.route('/openapi.yaml')
+# Serves OpenAPI specification
+def serve_openai_yaml():
+    return send_from_directory('.', 'openapi.yaml', mimetype='text/yaml')
+
+@app.route('/.well-known/ai-plugin.json')
+# Serves AI plugin manifest
+def serve_ai_plugin_manifest():
+    return send_from_directory('.well-known', 'ai-plugin.json', mimetype='application/json')
+
+@app.route('/prices', methods=['GET', 'POST'])
+# Prices endpoint fetches forex price data from OANDA API
+def get_prices():
+    if request.method == 'POST':
+        data = request.get_json()
+    else:  # It's a GET request
+        data = request.args.to_dict()
+
+    if not data or not all(key in data for key in ['instrument', 'from_time', 'granularity', 'price']):
+        prompt = "Please provide the following details for the price data:\n"
+        prompt += "1. Instrument (currency pair): For example, 'EUR_USD'\n"
+        prompt += "2. From time (start time for the analysis): For example, '2022-1-17T15:00:00.000000000Z'\n"
+        prompt += "3. Granularity (time interval for the analysis): For example, 'H1' (hourly), 'D' (daily), 'M' (monthly), etc."
+        prompt += "4. Price: 'A' for Ask, 'B' for Bid, 'M' for Midpoint"
+        return jsonify({'message': prompt}), 400
+
+    instrument = data.get('instrument')
+    from_time = data.get('from_time')
+    granularity = data.get('granularity')
+    price = data.get('price')
+
+    oanda_api_key = os.getenv("OANDA_API_KEY")
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+
+    plugin = OpenAIPlugin(oanda_api_key, openai_api_key)
+
+    candles = plugin.get_oanda_candles(instrument, from_time, granularity, price)
