@@ -192,3 +192,43 @@ def analyze():
     sentiment = plugin.analyze_market(instrument, from_time, granularity, price)
 
     print(f"Market sentiment: {sentiment}")
+
+    return jsonify({'sentiment': sentiment})
+
+# Class for interfacing with OpenAI API and OANDA API
+class OpenAIPlugin(object):
+    def __init__(self, oanda_api_key, openai_api_key):
+        self.oanda_api_key = oanda_api_key
+        self.openai_api_key = openai_api_key
+        self.oanda_client = API(access_token=self.oanda_api_key, environment="practice")
+        client.api_key = self.openai_api_key
+
+    def determine_candles_to_analyze(self, time_frame):
+        return 1.0
+
+    def get_oanda_candles(self, instrument, from_time, granularity, price):
+        oanda_api_key = os.environ["OANDA_API_KEY"]  # Retrieve the OANDA API key from the environment variable
+
+        oanda_client = API(access_token=oanda_api_key, environment="practice")
+
+        params = {
+            "price": price,
+            "from": from_time,
+            "granularity": granularity
+        }
+
+        try:
+            request = InstrumentsCandles(instrument=instrument, params=params)
+            response = oanda_client.request(request)
+            if "candles" in response:
+                candles = response["candles"]
+                return candles
+            else:
+                print(f"Error fetching candles from Oanda: {response}")
+                return None
+        except V20Error as e:
+            print(f"Error fetching candles from Oanda: {e}")
+            return None
+        except Exception as e:
+            print(f"Unexpected error fetching candles from Oanda: {e}")
+            return None
