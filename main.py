@@ -262,3 +262,20 @@ class OpenAIPlugin(object):
                 else:
                     sentiment = 'Bullish'
             elif closing_prices[-1] < trailing_sma_average:
+                if trailing_sma_average - closing_prices[-1] > 0.1 * trailing_sma_average:
+                    sentiment = 'Very bearish'
+                else:
+                    sentiment = 'Bearish'
+
+            # Return sentiment and SMAs
+            return {'sentiment': sentiment, 'smas': smas}
+        except Exception as e:
+            print(f"Error analyzing market: {e}")
+            return {'error': str(e)}
+
+# Start the Flask application
+if __name__ == "__main__":
+    host = os.getenv('HOST', '0.0.0.0')
+    port = int(os.getenv('PORT', 5003))
+
+    app.run(host=host, port=port)
