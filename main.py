@@ -232,3 +232,33 @@ class OpenAIPlugin(object):
         except Exception as e:
             print(f"Unexpected error fetching candles from Oanda: {e}")
             return None
+        
+    def analyze_market(self, instrument, from_time, granularity, price):
+        try:
+            candles = self.get_oanda_candles(instrument, from_time, granularity, price)
+
+            if not candles:
+                return "Failed to fetch candles."
+
+            candles_percentage = self.determine_candles_to_analyze(granularity)
+            num_candles = int(len(candles) * candles_percentage)
+            last_candles = candles[-num_candles:]
+
+            closing_prices = np.array([float(candle['mid']['c']) for candle in last_candles])
+
+            sma_periods = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 25, 30, 40, 50, 100, 200]
+            smas = {}
+            for period in sma_periods:
+                sma = np.mean(closing_prices[-period:])
+                smas[period] = sma
+
+            trailing_sma_average = np.mean(list(smas.values()))
+
+            sentiment = 'Uncertain'  # Default sentiment
+
+            if closing_prices[-1] > trailing_sma_average:
+                if closing_prices[-1] - trailing_sma_average > 0.1 * trailing_sma_average:
+                    sentiment = 'Very bullish'
+                else:
+                    sentiment = 'Bullish'
+            elif closing_prices[-1] < trailing_sma_average:
