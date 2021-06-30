@@ -1,4 +1,7 @@
 openapi: 3.0.1
 info:
   title: Forex Rates powered by OpenAI
-  description: Unleash Forex Rates; Advanced analysis for currency markets. Gain insights, sentiment evaluation, and text completion
+  description: Unleash Forex Rates; Advanced analysis for currency markets. Gain insights, sentiment evaluation, and text completion.
+  version: 'v1'
+servers:
+  - url: h
