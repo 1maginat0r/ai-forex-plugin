@@ -6,4 +6,4 @@ info:
 servers:
   - url: https://live.forex-gpt.ai
 oanda:
-  h
+  hostname: api-fxpracti
