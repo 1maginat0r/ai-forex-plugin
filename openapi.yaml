@@ -4,4 +4,6 @@ info:
   description: Unleash Forex Rates; Advanced analysis for currency markets. Gain insights, sentiment evaluation, and text completion.
   version: 'v1'
 servers:
-  - url: h
+  - url: https://live.forex-gpt.ai
+oanda:
+  h
