@@ -7,4 +7,6 @@ servers:
   - url: https://live.forex-gpt.ai
 oanda:
   hostname: api-fxpractice.oanda.com
-  streaming_hostname: stream-fxpractice.oanda.c
+  streaming_hostname: stream-fxpractice.oanda.com
+  port: 443
+  ssl: tru
