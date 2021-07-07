@@ -11,4 +11,4 @@ oanda:
   port: 443
   ssl: true
   token: YOUR_OANDA_TOKEN
- 
+  username: YOUR_OANDA_USERNA
