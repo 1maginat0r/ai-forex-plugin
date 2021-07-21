@@ -13,4 +13,5 @@ oanda:
   token: YOUR_OANDA_TOKEN
   username: YOUR_OANDA_USERNAME
   accounts:
-    - YOU
+    - YOUR_ACCOUNT_ID_1
+    - YOUR_ACCOU
