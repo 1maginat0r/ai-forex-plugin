@@ -20,4 +20,5 @@ paths:
   /analyze:
     post:
       operationId: analyze
-      x-openai-isConsequent
+      x-openai-isConsequential: false
+      summary: Analyze te
