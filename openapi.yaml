@@ -17,4 +17,6 @@ oanda:
     - YOUR_ACCOUNT_ID_2
   active_account: YOUR_ACTIVE_ACCOUNT_ID
 paths:
-  /an
+  /analyze:
+    post:
+      operationId: analyze
