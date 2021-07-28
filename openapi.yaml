@@ -20,3 +20,4 @@ paths:
   /analyze:
     post:
       operationId: analyze
+      x-openai-isConsequent
