@@ -15,4 +15,6 @@ oanda:
   accounts:
     - YOUR_ACCOUNT_ID_1
     - YOUR_ACCOUNT_ID_2
-  active_account: YOU
+  active_account: YOUR_ACTIVE_ACCOUNT_ID
+paths:
+  /an
