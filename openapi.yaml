@@ -23,4 +23,6 @@ paths:
       x-openai-isConsequential: false
       summary: Analyze text
       requestBody:
-        requir
+        required: true
+        content:
+     
