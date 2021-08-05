@@ -21,4 +21,6 @@ paths:
     post:
       operationId: analyze
       x-openai-isConsequential: false
-      summary: Analyze te
+      summary: Analyze text
+      requestBody:
+        requir
