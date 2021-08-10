@@ -27,4 +27,4 @@ paths:
         content:
           application/json:
             schema:
-             
+              $ref: '#/component
