@@ -25,4 +25,5 @@ paths:
       requestBody:
         required: true
         content:
-     
+          application/json:
+    
