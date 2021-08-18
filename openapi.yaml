@@ -30,4 +30,6 @@ paths:
               $ref: '#/components/schemas/analyzeRequest'
       responses:
         "200":
-          descr
+          description: OK
+          content:
+          
