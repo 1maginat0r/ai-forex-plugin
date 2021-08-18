@@ -27,4 +27,5 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/component
+              $ref: '#/components/schemas/analyzeRequest'
+      respo
