@@ -34,4 +34,5 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/
+                $ref: '#/components/schemas/analyzeResponse'
+  /generate
