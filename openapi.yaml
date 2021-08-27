@@ -38,4 +38,5 @@ paths:
   /generate:
     post:
       operationId: generate
-      x-openai-isCon
+      x-openai-isConsequential: false
+      summary
