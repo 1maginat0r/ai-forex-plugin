@@ -37,4 +37,5 @@ paths:
                 $ref: '#/components/schemas/analyzeResponse'
   /generate:
     post:
-      operationI
+      operationId: generate
+      x-openai-isCon
