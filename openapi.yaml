@@ -41,4 +41,5 @@ paths:
       x-openai-isConsequential: false
       summary: Generate text
       requestBody:
-  
+        required: true
+        con
