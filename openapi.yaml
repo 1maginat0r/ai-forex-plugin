@@ -39,4 +39,6 @@ paths:
     post:
       operationId: generate
       x-openai-isConsequential: false
-      summary
+      summary: Generate text
+      requestBody:
+  
