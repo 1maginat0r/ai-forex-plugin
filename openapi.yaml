@@ -42,4 +42,6 @@ paths:
       summary: Generate text
       requestBody:
         required: true
-        con
+        content:
+          application/json:
+     
