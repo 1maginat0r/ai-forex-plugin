@@ -45,4 +45,4 @@ paths:
         content:
           application/json:
             schema:
-              $re
+              $ref: '#/components/schemas/gene
