@@ -50,4 +50,5 @@ paths:
         "200":
           description: OK
           content:
-        
+            application/json:
+              sch
