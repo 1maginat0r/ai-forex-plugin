@@ -47,4 +47,5 @@ paths:
             schema:
               $ref: '#/components/schemas/generateRequest'
       responses:
- 
+        "200":
+          descri
