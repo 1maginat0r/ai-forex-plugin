@@ -48,4 +48,6 @@ paths:
               $ref: '#/components/schemas/generateRequest'
       responses:
         "200":
-          descri
+          description: OK
+          content:
+        
