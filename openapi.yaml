@@ -51,4 +51,5 @@ paths:
           description: OK
           content:
             application/json:
-              sch
+              schema:
+                $ref: '#/componen
