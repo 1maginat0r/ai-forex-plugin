@@ -52,4 +52,5 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/componen
+                $ref: '#/components/schemas/generateResponse'
+  /
