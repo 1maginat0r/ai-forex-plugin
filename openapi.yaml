@@ -53,4 +53,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/generateResponse'
-  /
+  /complete:
+    post:
+      operatio
