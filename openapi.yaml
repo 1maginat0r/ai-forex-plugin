@@ -56,4 +56,5 @@ paths:
   /complete:
     post:
       operationId: complete
-      x-openai-isC
+      x-openai-isConsequential: false
+      summ
