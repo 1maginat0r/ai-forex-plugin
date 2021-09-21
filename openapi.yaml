@@ -55,4 +55,5 @@ paths:
                 $ref: '#/components/schemas/generateResponse'
   /complete:
     post:
-      operatio
+      operationId: complete
+      x-openai-isC
