@@ -57,4 +57,5 @@ paths:
     post:
       operationId: complete
       x-openai-isConsequential: false
-      summ
+      summary: Complete text
+      requestB
