@@ -58,4 +58,6 @@ paths:
       operationId: complete
       x-openai-isConsequential: false
       summary: Complete text
-      requestB
+      requestBody:
+        required: true
+       
