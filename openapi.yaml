@@ -61,4 +61,5 @@ paths:
       requestBody:
         required: true
         content:
-          appl
+          application/json:
+            sche
