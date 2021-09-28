@@ -60,4 +60,5 @@ paths:
       summary: Complete text
       requestBody:
         required: true
-       
+        content:
+          appl
