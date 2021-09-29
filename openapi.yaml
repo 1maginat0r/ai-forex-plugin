@@ -62,4 +62,5 @@ paths:
         required: true
         content:
           application/json:
-            sche
+            schema:
+              $ref: '#/compo
