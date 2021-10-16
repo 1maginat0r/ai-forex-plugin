@@ -63,4 +63,5 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/compo
+              $ref: '#/components/schemas/completeRequest'
+ 
