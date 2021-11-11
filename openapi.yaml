@@ -64,4 +64,5 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/completeRequest'
+      responses:
  
