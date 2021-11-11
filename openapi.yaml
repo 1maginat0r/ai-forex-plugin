@@ -65,4 +65,5 @@ paths:
             schema:
               $ref: '#/components/schemas/completeRequest'
       responses:
- 
+        "200":
+          descri
