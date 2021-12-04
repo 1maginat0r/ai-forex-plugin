@@ -66,4 +66,6 @@ paths:
               $ref: '#/components/schemas/completeRequest'
       responses:
         "200":
-          descri
+          description: OK
+          content:
+ 
