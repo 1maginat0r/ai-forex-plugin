@@ -73,4 +73,5 @@ paths:
                 $ref: '#/components/schemas/completeResponse'
   /search:
     post:
-      operationId: 
+      operationId: search
+      summary: Search for text
