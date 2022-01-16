@@ -75,3 +75,5 @@ paths:
     post:
       operationId: search
       summary: Search for text
+      requestBody:
+        required: tr
