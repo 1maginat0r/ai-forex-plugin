@@ -78,4 +78,5 @@ paths:
       requestBody:
         required: true
         content:
-          appli
+          application/json:
+            schema
