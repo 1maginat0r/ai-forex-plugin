@@ -76,4 +76,6 @@ paths:
       operationId: search
       summary: Search for text
       requestBody:
-        required: tr
+        required: true
+        content:
+          appli
