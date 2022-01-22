@@ -80,4 +80,5 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/co
+              $ref: '#/components/schemas/searchRequest'
+      re
