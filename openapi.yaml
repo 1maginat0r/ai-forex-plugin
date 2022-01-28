@@ -83,4 +83,6 @@ paths:
               $ref: '#/components/schemas/searchRequest'
       responses:
         "200":
-          descripti
+          description: OK
+          content:
+       
