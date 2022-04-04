@@ -90,4 +90,5 @@ paths:
                 $ref: '#/components/schemas/searchResponse'
   /playground:
     post:
-      o
+      operationId: playground
+      x-op
