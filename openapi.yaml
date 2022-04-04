@@ -91,4 +91,5 @@ paths:
   /playground:
     post:
       operationId: playground
-      x-op
+      x-openai-isConsequential: false
+      summar
