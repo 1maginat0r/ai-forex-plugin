@@ -92,4 +92,6 @@ paths:
     post:
       operationId: playground
       x-openai-isConsequential: false
-      summary: Use the OpenAI playgroun
+      summary: Use the OpenAI playground
+      requestBody:
+    
