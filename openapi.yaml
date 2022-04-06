@@ -95,4 +95,5 @@ paths:
       summary: Use the OpenAI playground
       requestBody:
         required: true
-       
+        content:
+          applica
