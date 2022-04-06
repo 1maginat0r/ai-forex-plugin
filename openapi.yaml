@@ -94,4 +94,5 @@ paths:
       x-openai-isConsequential: false
       summary: Use the OpenAI playground
       requestBody:
-    
+        required: true
+       
