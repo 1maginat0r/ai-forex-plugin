@@ -96,4 +96,6 @@ paths:
       requestBody:
         required: true
         content:
-          applica
+          application/json:
+            schema:
+              $ref: 
