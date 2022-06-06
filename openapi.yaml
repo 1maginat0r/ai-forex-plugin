@@ -98,4 +98,6 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/playgroundRe
+              $ref: '#/components/schemas/playgroundRequest'
+      responses:
+        
