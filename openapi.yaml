@@ -101,4 +101,6 @@ paths:
               $ref: '#/components/schemas/playgroundRequest'
       responses:
         "200":
-          description: O
+          description: OK
+          content:
+         
