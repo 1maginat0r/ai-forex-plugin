@@ -104,4 +104,5 @@ paths:
           description: OK
           content:
             application/json:
-              schem
+              schema:
+                $ref: '#/com
