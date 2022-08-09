@@ -105,4 +105,4 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/com
+                $ref: '#/components/schemas/
