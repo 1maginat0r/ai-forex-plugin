@@ -105,4 +105,6 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/
+                $ref: '#/components/schemas/playgroundResponse'
+  /prices:
+ 
