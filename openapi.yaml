@@ -107,4 +107,5 @@ paths:
               schema:
                 $ref: '#/components/schemas/playgroundResponse'
   /prices:
- 
+    post:
+      operationId: pr
