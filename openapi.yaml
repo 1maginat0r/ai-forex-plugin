@@ -108,4 +108,5 @@ paths:
                 $ref: '#/components/schemas/playgroundResponse'
   /prices:
     post:
-      operationId: pr
+      operationId: prices
+      x-openai-isConsequential: false
