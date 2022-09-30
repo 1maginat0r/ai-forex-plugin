@@ -111,4 +111,6 @@ paths:
       operationId: prices
       x-openai-isConsequential: false
       summary: Get historical prices from the OANDA API
-     
+      requestBody:
+        required: true
+        
