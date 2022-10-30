@@ -113,4 +113,5 @@ paths:
       summary: Get historical prices from the OANDA API
       requestBody:
         required: true
-        
+        content:
+          application/jso
