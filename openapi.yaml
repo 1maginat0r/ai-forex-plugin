@@ -114,4 +114,6 @@ paths:
       requestBody:
         required: true
         content:
-          application/jso
+          application/json:
+            schema:
+            
