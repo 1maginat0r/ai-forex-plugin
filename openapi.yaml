@@ -116,4 +116,5 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/pric
+              $ref: '#/components/schemas/pricesRequest'
+      responses:
