@@ -118,3 +118,5 @@ paths:
             schema:
               $ref: '#/components/schemas/pricesRequest'
       responses:
+        "200":
+          des
