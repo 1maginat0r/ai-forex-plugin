@@ -119,4 +119,6 @@ paths:
               $ref: '#/components/schemas/pricesRequest'
       responses:
         "200":
-          des
+          description: OK
+          content:
+  
