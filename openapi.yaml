@@ -123,4 +123,5 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schema
+                $ref: '#/components/schemas/pricesResponse'
+components:
