@@ -123,4 +123,4 @@ paths:
           content:
             application/json:
               schema:
-               
+                $ref: '#/components/schema
