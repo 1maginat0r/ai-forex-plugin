@@ -125,3 +125,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/pricesResponse'
 components:
+  schemas:
+    analyzeRequest:
+      type
