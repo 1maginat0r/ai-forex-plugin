@@ -127,4 +127,6 @@ paths:
 components:
   schemas:
     analyzeRequest:
-      type
+      type: object
+      required: 
+ 
