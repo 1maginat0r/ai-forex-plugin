@@ -129,4 +129,5 @@ components:
     analyzeRequest:
       type: object
       required: 
- 
+        - text
+      propert
