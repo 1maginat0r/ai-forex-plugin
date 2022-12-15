@@ -132,4 +132,5 @@ components:
         - text
       properties:
         text:
-          t
+          type: string
+          description: 
