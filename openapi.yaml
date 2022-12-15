@@ -140,4 +140,5 @@ components:
             type: object
             properties:
               type:
-                type: stri
+                type: string
+                description: The 
