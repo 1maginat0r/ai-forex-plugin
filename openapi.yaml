@@ -130,4 +130,6 @@ components:
       type: object
       required: 
         - text
-      propert
+      properties:
+        text:
+          t
