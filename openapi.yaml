@@ -137,4 +137,5 @@ components:
         entities:
           type: array
           items:
-            type:
+            type: object
+            properties:
