@@ -139,3 +139,5 @@ components:
           items:
             type: object
             properties:
+              type:
+                type: stri
