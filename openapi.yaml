@@ -133,4 +133,6 @@ components:
       properties:
         text:
           type: string
-          description: 
+          description: The text to analyze.
+        entities:
+ 
