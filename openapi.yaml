@@ -141,4 +141,5 @@ components:
             properties:
               type:
                 type: string
-                description: The 
+                description: The type of entity.
+            
