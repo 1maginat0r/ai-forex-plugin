@@ -135,4 +135,5 @@ components:
           type: string
           description: The text to analyze.
         entities:
- 
+          type: array
+      
