@@ -142,4 +142,5 @@ components:
               type:
                 type: string
                 description: The type of entity.
-            
+              start:
+                ty
