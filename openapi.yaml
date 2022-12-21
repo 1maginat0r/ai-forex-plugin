@@ -144,4 +144,6 @@ components:
                 description: The type of entity.
               start:
                 type: integer
-                description: The start index of the e
+                description: The start index of the entity.
+              end:
+        
