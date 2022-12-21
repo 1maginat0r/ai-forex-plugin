@@ -143,4 +143,5 @@ components:
                 type: string
                 description: The type of entity.
               start:
-                ty
+                type: integer
+                description:
