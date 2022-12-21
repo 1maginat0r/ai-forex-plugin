@@ -146,4 +146,5 @@ components:
                 type: integer
                 description: The start index of the entity.
               end:
-        
+                type: integer
+              
