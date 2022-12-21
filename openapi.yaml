@@ -150,4 +150,5 @@ components:
                 description: The end index of the entity.
               text:
                 type: string
-                description
+                description: The text of the entity.
+    a
