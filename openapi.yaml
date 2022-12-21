@@ -148,4 +148,5 @@ components:
               end:
                 type: integer
                 description: The end index of the entity.
-              t
+              text:
+                type: string
