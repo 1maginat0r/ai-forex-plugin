@@ -151,4 +151,5 @@ components:
               text:
                 type: string
                 description: The text of the entity.
-    a
+    analyzeResponse:
+      type: obj
