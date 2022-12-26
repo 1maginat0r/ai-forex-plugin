@@ -152,4 +152,6 @@ components:
                 type: string
                 description: The text of the entity.
     analyzeResponse:
-      type: obj
+      type: object
+      properties:
+        s
