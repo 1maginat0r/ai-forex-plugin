@@ -154,4 +154,6 @@ components:
     analyzeResponse:
       type: object
       properties:
-        s
+        sentiment:
+          type: string
+       
