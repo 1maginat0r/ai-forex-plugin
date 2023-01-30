@@ -158,4 +158,5 @@ components:
           type: string
           description: The overall market sentiment based on the analysis.
         smas:
-          type
+          type: object
+          additionalProper
