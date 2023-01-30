@@ -156,4 +156,4 @@ components:
       properties:
         sentiment:
           type: string
-          description: The overall ma
+          description: The overall market sentiment based on the analy
