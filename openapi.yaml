@@ -167,4 +167,5 @@ components:
           description: Error message in case the analysis fails.
     generateRequest:
       type: object
-    
+      required: 
+        - pr
