@@ -161,4 +161,6 @@ components:
           type: object
           additionalProperties:
             type: number
-          description: A dictionary of Simple Moving Averages (SMAs) for various
+          description: A dictionary of Simple Moving Averages (SMAs) for various periods.
+        error:
+      
