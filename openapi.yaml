@@ -164,4 +164,5 @@ components:
           description: A dictionary of Simple Moving Averages (SMAs) for various periods.
         error:
           type: string
-          description: Error message in c
+          description: Error message in case the analysis fails.
+    g
