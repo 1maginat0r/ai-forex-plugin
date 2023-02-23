@@ -168,4 +168,6 @@ components:
     generateRequest:
       type: object
       required: 
-        - pr
+        - prompt
+      properties:
+        pr
