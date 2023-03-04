@@ -170,4 +170,5 @@ components:
       required: 
         - prompt
       properties:
-        pr
+        prompt:
+          type:
