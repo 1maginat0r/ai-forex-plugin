@@ -171,4 +171,5 @@ components:
         - prompt
       properties:
         prompt:
-          type:
+          type: string
+          description: T
