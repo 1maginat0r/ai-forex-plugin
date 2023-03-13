@@ -176,4 +176,5 @@ components:
         temperature:
           type: number
           format: float
-          description: The temperature of t
+          description: The temperature of the generator.
+          default
