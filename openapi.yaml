@@ -172,4 +172,5 @@ components:
       properties:
         prompt:
           type: string
-          description: T
+          description: The prompt for the generator.
+        tempe
