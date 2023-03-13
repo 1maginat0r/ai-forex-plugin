@@ -175,4 +175,5 @@ components:
           description: The prompt for the generator.
         temperature:
           type: number
-  
+          format: float
+          d
