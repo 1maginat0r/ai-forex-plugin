@@ -173,4 +173,6 @@ components:
         prompt:
           type: string
           description: The prompt for the generator.
-        tempe
+        temperature:
+          type: number
+  
