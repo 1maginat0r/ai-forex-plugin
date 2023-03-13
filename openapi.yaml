@@ -176,4 +176,4 @@ components:
         temperature:
           type: number
           format: float
-          d
+          description: The temperature of t
