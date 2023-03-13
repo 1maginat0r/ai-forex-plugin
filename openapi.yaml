@@ -179,4 +179,6 @@ components:
           description: The temperature of the generator.
           default: 0.5
     generateResponse:
-      type:
+      type: object
+      properties:
+        g
