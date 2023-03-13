@@ -177,4 +177,6 @@ components:
           type: number
           format: float
           description: The temperature of the generator.
-          default
+          default: 0.5
+    generateResponse:
+      type:
