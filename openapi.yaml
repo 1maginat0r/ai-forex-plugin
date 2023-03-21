@@ -181,4 +181,5 @@ components:
     generateResponse:
       type: object
       properties:
-        g
+        generated_text:
+          type: stri
