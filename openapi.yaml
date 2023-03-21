@@ -182,4 +182,5 @@ components:
       type: object
       properties:
         generated_text:
-          type: stri
+          type: string
+          descripti
