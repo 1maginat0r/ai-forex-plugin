@@ -184,4 +184,6 @@ components:
         generated_text:
           type: string
           description: The generated text.
-    completeReq
+    completeRequest:
+      type: object
+   
