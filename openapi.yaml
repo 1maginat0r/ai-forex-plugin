@@ -186,4 +186,6 @@ components:
           description: The generated text.
     completeRequest:
       type: object
-   
+      required: 
+        - text
+      pr
