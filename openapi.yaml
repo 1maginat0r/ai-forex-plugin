@@ -190,4 +190,5 @@ components:
         - text
       properties:
         text:
-       
+          type: string
+          description: The te
