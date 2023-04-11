@@ -191,4 +191,5 @@ components:
       properties:
         text:
           type: string
-          description: The te
+          description: The text to complete.
+    completeResponse:
