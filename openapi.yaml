@@ -193,3 +193,5 @@ components:
           type: string
           description: The text to complete.
     completeResponse:
+      type: object
+      properties:
