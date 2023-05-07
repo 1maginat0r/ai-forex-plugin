@@ -195,3 +195,5 @@ components:
     completeResponse:
       type: object
       properties:
+        completed_text:
+         
