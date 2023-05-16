@@ -196,4 +196,5 @@ components:
       type: object
       properties:
         completed_text:
-         
+          type: string
+          descripti
