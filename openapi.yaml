@@ -197,4 +197,4 @@ components:
       properties:
         completed_text:
           type: string
-          descripti
+          description: The completed text.
