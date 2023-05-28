@@ -199,4 +199,6 @@ components:
           type: string
           description: The completed text.
     searchRequest:
-      t
+      type: object
+      required: 
+    
