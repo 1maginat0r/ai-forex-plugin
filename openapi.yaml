@@ -201,4 +201,6 @@ components:
     searchRequest:
       type: object
       required: 
-    
+        - query
+      properties:
+     
