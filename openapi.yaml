@@ -203,4 +203,6 @@ components:
       required: 
         - query
       properties:
-     
+        query:
+          type: string
+         
