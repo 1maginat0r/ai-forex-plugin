@@ -206,4 +206,6 @@ components:
         query:
           type: string
           description: The search query.
-    s
+    searchResponse:
+      type: object
+   
