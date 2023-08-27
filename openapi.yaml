@@ -208,4 +208,6 @@ components:
           description: The search query.
     searchResponse:
       type: object
+      properties:
+        results:
    
