@@ -210,4 +210,5 @@ components:
       type: object
       properties:
         results:
-   
+          type: array
+          items:
