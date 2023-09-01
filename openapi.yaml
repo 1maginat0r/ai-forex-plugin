@@ -212,3 +212,5 @@ components:
         results:
           type: array
           items:
+            type: object
+        
