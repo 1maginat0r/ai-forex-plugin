@@ -214,4 +214,5 @@ components:
           items:
             type: object
             properties:
-     
+              title:
+          
