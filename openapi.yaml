@@ -215,4 +215,5 @@ components:
             type: object
             properties:
               title:
-          
+                type: string
+               
