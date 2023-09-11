@@ -220,4 +220,6 @@ components:
               url:
                 type: string
                 description: The URL of the search result.
-    playgroundRequest
+    playgroundRequest:
+      type: object
+      r
