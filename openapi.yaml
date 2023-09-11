@@ -219,4 +219,4 @@ components:
                 description: The title of the search result.
               url:
                 type: string
-             
+                description: The URL of 
