@@ -226,4 +226,5 @@ components:
         - code
       properties:
         code:
-       
+          type: string
+          descri
