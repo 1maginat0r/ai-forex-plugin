@@ -222,4 +222,6 @@ components:
                 description: The URL of the search result.
     playgroundRequest:
       type: object
-      r
+      required: 
+        - code
+    
