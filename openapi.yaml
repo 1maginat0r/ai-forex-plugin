@@ -227,4 +227,5 @@ components:
       properties:
         code:
           type: string
-          description: The code to execute in the OpenAI play
+          description: The code to execute in the OpenAI playground.
+    playgroundResponse:
