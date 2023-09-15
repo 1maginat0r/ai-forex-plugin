@@ -233,4 +233,4 @@ components:
       properties:
         output:
           type: string
-          de
+          description: The output of the co
