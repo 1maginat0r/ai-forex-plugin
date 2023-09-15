@@ -230,4 +230,6 @@ components:
           description: The code to execute in the OpenAI playground.
     playgroundResponse:
       type: object
-      pro
+      properties:
+        output:
+    
