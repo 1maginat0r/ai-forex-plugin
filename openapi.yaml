@@ -232,4 +232,5 @@ components:
       type: object
       properties:
         output:
-    
+          type: string
+          de
