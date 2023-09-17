@@ -233,4 +233,6 @@ components:
       properties:
         output:
           type: string
-          description: The output of the code execution in the OpenAI playgro
+          description: The output of the code execution in the OpenAI playground.
+    pricesRequest:
+      t
