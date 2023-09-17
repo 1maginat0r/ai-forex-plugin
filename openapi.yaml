@@ -233,4 +233,4 @@ components:
       properties:
         output:
           type: string
-          description: The output of the co
+          description: The output of the code execution in the OpenAI playgro
