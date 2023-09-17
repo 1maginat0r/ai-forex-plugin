@@ -235,4 +235,6 @@ components:
           type: string
           description: The output of the code execution in the OpenAI playground.
     pricesRequest:
-      t
+      type: object
+      required: 
+        
