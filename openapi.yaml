@@ -239,4 +239,6 @@ components:
       required: 
         - instrument
         - from_time
-        - granul
+        - granularity
+        - price
+      pro
