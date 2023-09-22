@@ -238,4 +238,5 @@ components:
       type: object
       required: 
         - instrument
-        - from
+        - from_time
+        - granul
