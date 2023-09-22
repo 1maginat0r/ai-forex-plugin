@@ -237,4 +237,5 @@ components:
     pricesRequest:
       type: object
       required: 
-        
+        - instrument
+        - from
