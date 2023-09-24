@@ -244,4 +244,4 @@ components:
       properties:
         instrument:
           type: string
-    
+          description: The 
