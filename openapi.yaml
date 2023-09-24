@@ -242,4 +242,6 @@ components:
         - granularity
         - price
       properties:
-        instru
+        instrument:
+          type: string
+    
