@@ -244,4 +244,5 @@ components:
       properties:
         instrument:
           type: string
-          description: The instrument to get historic
+          description: The instrument to get historical prices for.
+        fr
