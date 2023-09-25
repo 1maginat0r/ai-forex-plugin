@@ -247,4 +247,4 @@ components:
           description: The instrument to get historical prices for.
         from_time:
           type: string
-  
+          description: The start time for retrievi
