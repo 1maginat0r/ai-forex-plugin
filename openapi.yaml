@@ -249,4 +249,5 @@ components:
           type: string
           description: The start time for retrieving historical prices.
         granularity:
-       
+          type: string
+          descrip
