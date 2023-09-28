@@ -253,3 +253,4 @@ components:
           description: The granularity of the historical prices.
         price:
           type: string
+          description: The price typ
