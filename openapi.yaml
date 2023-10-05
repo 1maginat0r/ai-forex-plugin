@@ -259,4 +259,5 @@ components:
       properties:
         prices:
           type: array
-    
+          items:
+            typ
