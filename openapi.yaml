@@ -257,4 +257,6 @@ components:
     pricesResponse:
       type: object
       properties:
-  
+        prices:
+          type: array
+    
