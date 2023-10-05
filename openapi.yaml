@@ -255,4 +255,6 @@ components:
           type: string
           description: The price type to retrieve (e.g., BA, BC, BO).
     pricesResponse:
-   
+      type: object
+      properties:
+  
