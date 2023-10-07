@@ -260,4 +260,7 @@ components:
         prices:
           type: array
           items:
-            typ
+            type: object
+            properties:
+              timestamp:
+                type: 
