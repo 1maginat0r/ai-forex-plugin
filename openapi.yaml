@@ -263,4 +263,5 @@ components:
             type: object
             properties:
               timestamp:
-                type: 
+                type: string
+                description: The timest
