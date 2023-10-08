@@ -267,4 +267,5 @@ components:
                 description: The timestamp of the price.
               bid:
                 type: object
-  
+                properties:
+    
