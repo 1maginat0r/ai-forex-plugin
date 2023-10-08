@@ -268,4 +268,5 @@ components:
               bid:
                 type: object
                 properties:
-    
+                  o:
+      
