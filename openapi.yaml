@@ -271,4 +271,5 @@ components:
                   o:
                     type: string
                     description: The open bid price.
-           
+                  h:
+                   
