@@ -270,4 +270,5 @@ components:
                 properties:
                   o:
                     type: string
-                    description: T
+                    description: The open bid price.
+           
