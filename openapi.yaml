@@ -273,4 +273,5 @@ components:
                     description: The open bid price.
                   h:
                     type: string
-                    des
+                    description: The high bid price.
+ 
