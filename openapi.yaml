@@ -275,4 +275,5 @@ components:
                     type: string
                     description: The high bid price.
                   l:
+                    type: string
                  
