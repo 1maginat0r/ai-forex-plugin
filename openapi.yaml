@@ -276,4 +276,6 @@ components:
                     description: The high bid price.
                   l:
                     type: string
-                    description: The low bid pric
+                    description: The low bid price.
+                  c:
+             
