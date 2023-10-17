@@ -279,4 +279,4 @@ components:
                     description: The low bid price.
                   c:
                     type: string
-           
+                    description: The close 
