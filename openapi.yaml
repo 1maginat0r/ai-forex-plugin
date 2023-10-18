@@ -281,4 +281,5 @@ components:
                     type: string
                     description: The close bid price.
               ask:
-     
+                type: object
+              
