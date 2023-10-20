@@ -284,4 +284,5 @@ components:
                 type: object
                 properties:
                   o:
-                   
+                    type: string
+                  
