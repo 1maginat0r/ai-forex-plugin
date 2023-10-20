@@ -283,4 +283,5 @@ components:
               ask:
                 type: object
                 properties:
-        
+                  o:
+                   
