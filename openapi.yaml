@@ -285,4 +285,6 @@ components:
                 properties:
                   o:
                     type: string
-                    description: The open ask pric
+                    description: The open ask price.
+                  h:
+                  
