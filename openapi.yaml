@@ -288,4 +288,4 @@ components:
                     description: The open ask price.
                   h:
                     type: string
-                
+                    description: The high ask price.
