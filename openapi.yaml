@@ -289,3 +289,5 @@ components:
                   h:
                     type: string
                     description: The high ask price.
+                  l:
+                  
