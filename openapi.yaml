@@ -291,4 +291,4 @@ components:
                     description: The high ask price.
                   l:
                     type: string
-          
+                    description: The
