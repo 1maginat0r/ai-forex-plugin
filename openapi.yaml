@@ -294,4 +294,4 @@ components:
                     description: The low ask price.
                   c:
                     type: string
-     
+                    description: The 
