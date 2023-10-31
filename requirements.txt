@@ -1,0 +1,2 @@
+oandapyV20
+openai>=1
