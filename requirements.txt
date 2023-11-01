@@ -6,4 +6,4 @@ six
 flask-cors
 numpy
 pyyaml
-python-do
+python-dotenv
