@@ -3,4 +3,7 @@ openai>=1.0.0,<2.0.0
 flask
 requests
 six
-fla
+flask-cors
+numpy
+pyyaml
+python-do
